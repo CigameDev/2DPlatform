@@ -31,7 +31,7 @@ public class ParallaxEffect : MonoBehaviour
 
     private void Update()
     {
-        Vector2 newPositon = startingPosition + camMoveSinceStart / parallaxFactor;
+        Vector2 newPositon = startingPosition + camMoveSinceStart * parallaxFactor;
 
         transform.position = new Vector3(newPositon.x, newPositon.y, startingZ);
     }
