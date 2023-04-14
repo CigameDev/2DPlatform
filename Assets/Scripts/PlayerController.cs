@@ -91,7 +91,12 @@ public class PlayerController : MonoBehaviour
         inputSystem.Player.Run.canceled += Run_canceled;
         inputSystem.Player.Jump.performed += Jump_performed;
         inputSystem.Player.Jump.canceled += Jump_canceled;
+        inputSystem.Player.Attack.performed += Attack_performed;
+        inputSystem.Player.Attack.canceled += Attack_canceled;
     }
+
+   
+
     private void OnDisable()
     {
         inputSystem.Player.Move.performed -= Movement_performed;
@@ -100,6 +105,8 @@ public class PlayerController : MonoBehaviour
         inputSystem.Player.Run.canceled -= Run_canceled;
         inputSystem.Player.Jump.performed -= Jump_performed;
         inputSystem.Player.Jump.canceled -= Jump_canceled;
+        inputSystem.Player.Attack.performed -= Attack_performed;
+        inputSystem.Player.Attack.canceled -= Attack_canceled;
         inputSystem.Dispose();
     }
     private void FixedUpdate()
@@ -151,8 +158,18 @@ public class PlayerController : MonoBehaviour
     {
         if (touchingDirections.IsGround)
         {
-            animator.SetTrigger(AnimationString.JUMP);
+            animator.SetTrigger(AnimationString.JUMP_TRIGGER);
             rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
         }
+    }
+
+    private void Attack_canceled(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        
+    }
+
+    private void Attack_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        animator.SetTrigger(AnimationString.ATTACK_TRIGGER);
     }
 }

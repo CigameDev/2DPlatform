@@ -252,7 +252,7 @@ Transform:
   m_GameObject: {fileID: 240542329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1401840450}
@@ -351,7 +351,7 @@ Transform:
   m_GameObject: {fileID: 308526270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1401840450}
@@ -450,7 +450,7 @@ Transform:
   m_GameObject: {fileID: 338092829}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1401840450}
@@ -7703,33 +7703,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 245916187473915725, guid: 9f07e8f9db6ad0041bdb13d640cad1c7, type: 3}
-      propertyPath: runSpeed
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 245916187473915725, guid: 9f07e8f9db6ad0041bdb13d640cad1c7, type: 3}
-      propertyPath: walkSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 245916187473915725, guid: 9f07e8f9db6ad0041bdb13d640cad1c7, type: 3}
-      propertyPath: jumpImpulse
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6960035106904829814, guid: 9f07e8f9db6ad0041bdb13d640cad1c7, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: f908bded2cb9f9740b36b54ca6494fba, type: 2}
-    - target: {fileID: 8875680246221173140, guid: 9f07e8f9db6ad0041bdb13d640cad1c7, type: 3}
-      propertyPath: m_GravityScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8875680246221173141, guid: 9f07e8f9db6ad0041bdb13d640cad1c7, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875680246221173141, guid: 9f07e8f9db6ad0041bdb13d640cad1c7, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8875680246221173142, guid: 9f07e8f9db6ad0041bdb13d640cad1c7, type: 3}
       propertyPath: m_RootOrder
